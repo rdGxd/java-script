@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>País</title>
+</head>
+<body>
+  <h1>Sistema de País</h1>
+  Seu país é: <input type="lugar" name="lugar" id="lugar">
+  <input type="button" value="verificar" onclick="calcular()">
+  <div id="res"></div>
+  <script>
+    function calcular() {
+      var lugar = window.document.querySelector('input#lugar')
+      var res = window.document.querySelector('div#res')
+      res.innerHTML = `<strong>
+        <p>Seu país é: ${lugar.value}</p>
+      </strong>`
+      if ( lugar.value == 'Brasil') {
+        res.innerHTML = `<strong>
+          <p>Você é BR</p>
+        </strong>`
+      } else {
+        res.innerHTML = `<p><strong>Você é gringo</p></strong>`
+      }
+    }
+  </script>
+</body>
+</html>
