@@ -8,7 +8,7 @@ function carregar() {
     // BOM DIA!
     img.src = 'manhã.png'
     document.body.style.background = '#e2cd9f'
-  } else if (hora >= 12 && hora <= 18){
+  } else if (hora >= 12 && hora <= 18) {
     // BOA TARDE!
     img.src = 'tarde.png'
     document.body.style.background = '#b9846f'
